@@ -4,6 +4,7 @@ A simple iOS 8 push notification style control to show quick messages to the use
 
 ## Note: 
 Default blur effect with `UIBlurEffectStyleExtraLight`
+
 Default font color `black`
 
 Change values
