@@ -16,9 +16,6 @@ end
 
 
 ![Notification View iPhone Screenshot](https://raw.githubusercontent.com/MacKaSL/HMCNotification/master/snapshot.PNG)
--------------------
-![Notification View iPhone Screenshot](https://github.com/MacKaSL/HMCNotification/blob/master/snapshot.PNG)
-
 
 Enjoy :smiley:
 ===
