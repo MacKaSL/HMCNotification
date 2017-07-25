@@ -2,8 +2,17 @@
 
 A simple iOS 8 push notification style control to show quick messages to the user.
 
+## Note: 
+Default blur effect with `UIBlurEffectStyleExtraLight`
+Default font color `black`
 
-## Installation Steps:
+Change values
+```
+[HMCNotification sharedInstance].titleFontColor = [UIColor yellowColor];
+[HMCNotification sharedInstance].blurStyle = UIBlurEffectStyleLight;
+```
+
+## Installation:
 
 1) Make a Pod file and add following
 
