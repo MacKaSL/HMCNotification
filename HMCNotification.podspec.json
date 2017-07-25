@@ -1,0 +1,22 @@
+{
+  "name": "HMCNotification",
+  "version": "1.0.0",
+  "license": {
+    "type": "MIT",
+    "file": "LICENCE"
+  },
+  "summary": "A simple iOS 8 push notification style control to show quick messages to the user.",
+  "homepage": "https://github.com/MacKaSL/HMCNotification",
+  "authors": {
+    "Himal Madhushan": " "
+  },
+  "source": {
+    "git": "https://github.com/MacKaSL/HMCNotification.git",
+    "tag": "1.0.0"
+  },
+  "source_files": "Source/**/*.{h,m}",
+  "requires_arc": true,
+  "platforms": {
+    "ios": "8.0"
+  }
+}
