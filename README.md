@@ -1,9 +1,10 @@
 # HMCNotification
 =======
+
 A simple iOS 8 push notification style control to show quick messages to the user.
 
 
-###Installation Steps:
+#Installation Steps:
 It's very easy to add this custom view to your project.
 
 1) Open the HMPopUp project folder.
