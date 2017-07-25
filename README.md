@@ -3,7 +3,7 @@
 A simple iOS 8 push notification style control to show quick messages to the user.
 
 
-##Installation Steps:
+## Installation Steps:
 
 1) Make a Pod file and add following
 
