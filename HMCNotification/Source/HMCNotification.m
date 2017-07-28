@@ -79,7 +79,7 @@
     CGRect screenFrame = [UIScreen mainScreen].bounds;
     
     // Creating effect view
-    UIVisualEffectView *effectView = [[UIVisualEffectView alloc] initWithFrame:CGRectMake(0, -defaultHeight, screenFrame.size.width, defaultHeight)];
+    UIVisualEffectView *effectView = [[UIVisualEffectView alloc] initWithFrame:CGRectMake(0, -(defaultHeight+10), screenFrame.size.width, defaultHeight)];
     effectView.tag = 509;
     UIBlurEffect *blurEffect = [UIBlurEffect effectWithStyle:[HMCNotification sharedInstance].blurStyle];
     effectView.effect = blurEffect;
