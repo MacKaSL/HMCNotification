@@ -2,6 +2,18 @@
 
 A simple iOS 8 push notification style control to show quick messages to the user.
 
+
+## Installation:
+
+1) Make a Pod file and add following
+
+```
+source 'https://github.com/CocoaPods/Specs.git'
+target '<TARGET_NAME>' do
+	pod 'HMCNotification', '~> 1.0'
+end
+```
+
 ## Note: 
 Default blur effect with `UIBlurEffectStyleExtraLight`
 
@@ -13,15 +25,9 @@ Change values
 [HMCNotification sharedInstance].blurStyle = UIBlurEffectStyleLight;
 ```
 
-## Installation:
-
-1) Make a Pod file and add following
-
+And then show the notification using:
 ```
-source 'https://github.com/CocoaPods/Specs.git'
-target '<TARGET_NAME>' do
-	pod 'HMCNotification', '~> 1.0'
-end
+[HMCNotification showCustomPushWithTitle:@"Woohooo" message:@"Congrtaz, It all went successfully. Now you've become a part of iOS dev family" iconImageName:@"pushIconHappy"];
 ```
 
 
