@@ -14,12 +14,7 @@ target '<TARGET_NAME>' do
 end
 ```
 
-## Note: 
-Default blur effect with `UIBlurEffectStyleExtraLight`
-
-Default font color `black`
-
-Change values
+### Configuring and showing
 ```
 [HMCNotification sharedInstance].titleFontColor = [UIColor yellowColor];
 [HMCNotification sharedInstance].blurStyle = UIBlurEffectStyleLight;
@@ -29,6 +24,11 @@ And then show the notification using:
 ```
 [HMCNotification showCustomPushWithTitle:@"Woohooo" message:@"Congrtaz, It all went successfully. Now you've become a part of iOS dev family" iconImageName:@"pushIconHappy"];
 ```
+
+### Note: 
+Default blur effect with `UIBlurEffectStyleExtraLight`
+
+Default font color `black`
 
 
 ![Notification View iPhone Screenshot](https://raw.githubusercontent.com/MacKaSL/HMCNotification/master/snapshot.PNG)
