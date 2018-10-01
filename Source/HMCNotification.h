@@ -40,7 +40,7 @@
 
  @param title Push title
  @param message Push message
- @param iconImageName Push icon image name
+ @param image Push icon image
  */
 + (void)showCustomPushWithTitle:(NSString *)title message:(NSString *)message image:(UIImage *)image;
 
