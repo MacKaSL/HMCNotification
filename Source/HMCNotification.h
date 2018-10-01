@@ -30,7 +30,7 @@
 /**
  *  Created shared instance.
  *
- *  @return self - STBaseUtilClass
+ *  @return self - HMCNotification
  */
 + (HMCNotification *)sharedInstance;
 
