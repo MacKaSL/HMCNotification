@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = "HMCNotification"
   s.module_name  = "HMCNotification"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "Custom push style notification"
   s.description  = <<-DESC
                    A simple iOS 8 push notification style control to show quick messages to the user.
