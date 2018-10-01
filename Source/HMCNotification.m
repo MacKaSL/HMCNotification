@@ -43,25 +43,8 @@
     return [UIApplication sharedApplication].keyWindow.rootViewController;
 }
 
-+ (UIAlertController *)showAlertControllerWithTitle:(NSString *)title message:(NSString *)message actionTitle:(NSString *)actionTitle {
-    
-    UIAlertController * alertCon = [UIAlertController alertControllerWithTitle:NSLocalizedString(title, nil) message:NSLocalizedString(message, nil) preferredStyle:UIAlertControllerStyleAlert];
-    UIAlertAction *okAction = [UIAlertAction
-                               actionWithTitle:NSLocalizedString(actionTitle, @"OK action")
-                               style:UIAlertActionStyleDefault
-                               handler:^(UIAlertAction *action)
-                               {;
-                               }];
-    
-    [alertCon addAction:okAction];
-    [[self rootViewController] presentViewController:alertCon animated:YES completion:nil];
-    
-    return alertCon;
-}
-
-
 #pragma mark - Notification
-+ (void)showCustomPushWithTitle:(NSString *)title message:(NSString *)message iconImageName:(NSString *)iconImageName {
++ (void)showCustomPushWithTitle:(NSString *)title message:(NSString *)message image:(UIImage *)image {
     
     if ([HMCNotification sharedInstance].pushPresented == YES) {
         return;
@@ -73,9 +56,6 @@
     // how long the notification should stay
     float delay = 2;
     
-//    UISwipeGestureRecognizer *swipeGesture = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(dismissPush:gesture:)];
-//    [swipeGesture setDirection:UISwipeGestureRecognizerDirectionUp];
-    
     CGRect screenFrame = [UIScreen mainScreen].bounds;
     
     // Creating effect view
@@ -85,8 +65,6 @@
     effectView.effect = blurEffect;
     effectView.alpha = 1;
     
-//    [effectView addGestureRecognizer:swipeGesture];
-    
     // Creating and adding content view.
     UIView *contentView = [[UIView alloc] initWithFrame:CGRectMake(effectView.frame.origin.x, 0, effectView.frame.size.width, effectView.frame.size.height)];
     contentView.backgroundColor = [UIColor colorWithRed:0.1922 green:0.2009 blue:0.2322 alpha:1.0];
@@ -95,7 +73,7 @@
     
     // Creating UIImageView for icon
     UIImageView *imgViewIcon = [[UIImageView alloc] initWithFrame:CGRectMake(20, CGRectGetMidY(contentView.frame) - 15, 40, 40)];
-    imgViewIcon.image = [UIImage imageNamed:iconImageName];
+    imgViewIcon.image = image;
     [contentView addSubview:imgViewIcon];
     
     // Creating text container
@@ -185,12 +163,6 @@
         CGPoint point = [gesture locationInView:view];
         NSLog(@"x:%f , y:%f",point.x,point.y);
     }
-}
-
-
-#pragma mark - Alerts
-+ (void)showNoInternetAlert {
-    [self showAlertControllerWithTitle:@"No Internet!" message:NSLocalizedString(@"No working internet connection is found.\nPlease check your internet connection!", nil) actionTitle:NSLocalizedString(@"Okay", nil)];
 }
 
 @end

@@ -36,36 +36,14 @@
 
 #pragma mark - Methods
 /**
- *  Will show an alert controller
- *
- *  @param title          Title
- *  @param message        Body message
- *  @param actionTitle    Action title
- *
- *  @return Alert controller
- */
-+ (UIAlertController *)showAlertControllerWithTitle:(NSString *)title message:(NSString *)message actionTitle:(NSString *)actionTitle;
-
-/**
  Will show a customized view same as the Apple push notification
 
  @param title Push title
  @param message Push message
  @param iconImageName Push icon image name
  */
-+ (void)showCustomPushWithTitle:(NSString *)title message:(NSString *)message iconImageName:(NSString *)iconImageName;
++ (void)showCustomPushWithTitle:(NSString *)title message:(NSString *)message image:(UIImage *)image;
 
-/**
- Will show an UIAlertController to notify the user that an active internet connection is not there.
- */
-+ (void)showNoInternetAlert;
-
-/**
- *  Super view controller of all.
- *
- *  @return The super view controller
- */
-+ (UIViewController *)rootViewController;
 
 #pragma mark - Properties
 /**
