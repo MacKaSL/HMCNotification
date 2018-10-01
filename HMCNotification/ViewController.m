@@ -21,7 +21,7 @@
 - (IBAction)showNotification:(id)sender {
     [HMCNotification sharedInstance].titleFontColor = [UIColor yellowColor]; // default - black
     [HMCNotification sharedInstance].blurStyle = UIBlurEffectStyleLight; // default - UIBlurEffectStyleExtraLight
-    [HMCNotification showCustomPushWithTitle:@"Woohooo" message:@"Congrtaz, It all went successfully. Now you've become a part of iOS dev family" iconImageName:@"pushIconHappy"];
+    [HMCNotification showCustomPushWithTitle:@"Woohooo" message:@"Congrtaz, It all went successfully. Now you've become a part of iOS dev family" image:[UIImage imageNamed:@"pushIconHappy"]];
     
 }
 

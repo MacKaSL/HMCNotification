@@ -13,7 +13,7 @@
 		010F65EA1F25A4BA007C781D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 010F65E81F25A4BA007C781D /* Main.storyboard */; };
 		010F65EC1F25A4BA007C781D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 010F65EB1F25A4BA007C781D /* Assets.xcassets */; };
 		010F65EF1F25A4BA007C781D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 010F65ED1F25A4BA007C781D /* LaunchScreen.storyboard */; };
-		010F66001F25C9B4007C781D /* HMCNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 010F65FF1F25C9B4007C781D /* HMCNotification.m */; };
+		014454D021622A7800094A41 /* HMCNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 014454CE21622A7800094A41 /* HMCNotification.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +27,8 @@
 		010F65EB1F25A4BA007C781D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		010F65EE1F25A4BA007C781D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		010F65F01F25A4BA007C781D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		010F65FE1F25C9B4007C781D /* HMCNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMCNotification.h; sourceTree = "<group>"; };
-		010F65FF1F25C9B4007C781D /* HMCNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMCNotification.m; sourceTree = "<group>"; };
+		014454CE21622A7800094A41 /* HMCNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMCNotification.m; sourceTree = "<group>"; };
+		014454CF21622A7800094A41 /* HMCNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMCNotification.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +61,7 @@
 		010F65DE1F25A4BA007C781D /* HMCNotification */ = {
 			isa = PBXGroup;
 			children = (
-				010F65FD1F25C9B4007C781D /* Source */,
+				014454CD21622A7800094A41 /* Source */,
 				010F65E21F25A4BA007C781D /* AppDelegate.h */,
 				010F65E31F25A4BA007C781D /* AppDelegate.m */,
 				010F65E51F25A4BA007C781D /* ViewController.h */,
@@ -83,14 +83,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		010F65FD1F25C9B4007C781D /* Source */ = {
+		014454CD21622A7800094A41 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				010F65FE1F25C9B4007C781D /* HMCNotification.h */,
-				010F65FF1F25C9B4007C781D /* HMCNotification.m */,
+				014454CE21622A7800094A41 /* HMCNotification.m */,
+				014454CF21622A7800094A41 /* HMCNotification.h */,
 			);
 			path = Source;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -123,7 +123,6 @@
 				TargetAttributes = {
 					010F65DB1F25A4BA007C781D = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = HQ2NNVN7N2;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -167,7 +166,7 @@
 				010F65E71F25A4BA007C781D /* ViewController.m in Sources */,
 				010F65E41F25A4BA007C781D /* AppDelegate.m in Sources */,
 				010F65E11F25A4BA007C781D /* main.m in Sources */,
-				010F66001F25C9B4007C781D /* HMCNotification.m in Sources */,
+				014454D021622A7800094A41 /* HMCNotification.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +288,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = HQ2NNVN7N2;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = HMCNotification/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.himal.HMCNotification;
@@ -301,7 +300,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = HQ2NNVN7N2;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = HMCNotification/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.himal.HMCNotification;
